@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net4.8</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lidgren.Network" Version="1.0.2" />
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+    <Compile Include="../Common/*.cs" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+
+    <!-- جميع وحدات UnityEngine المطلوبة -->
+    <Reference Include="UnityEngine">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+
+    <!-- TextMeshPro -->
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+
+    <!-- Assembly-CSharp (كود اللعبة الأساسي) -->
+    <Reference Include="Assembly-CSharp">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\Spaceflight Simulator_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+
+    <!-- مرجع UITools (المود) -->
+    <Reference Include="UITools">
+      <HintPath>E:\Games\Spaceflight-Simulator-v09-08-2023\Spaceflight.Simulator\game\New folder\UITools\UITools.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
